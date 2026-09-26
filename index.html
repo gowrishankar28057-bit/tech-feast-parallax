@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="Tech Feast — a playful journey through code, creativity, and possibility. An interactive parallax experience.">
+  <title>Tech Feast — Beyond the ordinary</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d2ff5a'/%3E%3Ctext x='9' y='45' font-family='Arial' font-weight='bold' font-size='38'%3Etf%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header>
+    <a class="brand" href="#home" aria-label="Tech Feast home"><span class="brand-mark">t<span>f</span></span> TECH FEAST<span class="brand-star">✳</span></a>
+    <nav aria-label="Main navigation"><a href="#signal">The idea</a><a href="#playground">The playground</a><a class="nav-cta" href="#future">Go beyond <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero scene" id="home" aria-labelledby="hero-title">
+      <div class="hero-grid layer" data-speed="0.12" aria-hidden="true"></div>
+      <div class="hero-orbit layer" data-speed="0.22" aria-hidden="true"><div class="orbit-wire"></div><div class="orbit-wire second"></div><div class="orbit-core"></div></div>
+      <span class="spark spark-one layer" data-speed="-0.2" aria-hidden="true">✳</span>
+      <div class="hero-intro"><span class="eyebrow"><span class="live-dot"></span> A CELEBRATION OF WHAT'S NEXT</span><span class="edition">CODE. CREATE. CONNECT.</span></div>
+      <h1 id="hero-title" class="layer" data-speed="-0.09">BEYOND<br><span class="title-bottom">THE <em>ORDINARY.</em></span></h1>
+      <div class="hero-bottom"><p>Big ideas. Curious minds.<br>A whole new dimension of tech.</p><a class="round-link" href="#signal"><span>SCROLL TO<br>EXPLORE</span><span class="circle-arrow" aria-hidden="true">↓</span></a></div>
+      <div class="coordinates" aria-hidden="true"><span>TF / EXPLORATION 001</span><span>SCROLL INTO THE UNKNOWN</span><span>01 — 04</span></div>
+    </section>
+    <div class="ticker" aria-hidden="true"><div class="ticker-track">IDEAS WITHOUT LIMITS <span>✳</span> CREATE SOMETHING UNEXPECTED <span>✳</span> IDEAS WITHOUT LIMITS <span>✳</span> CREATE SOMETHING UNEXPECTED <span>✳</span></div></div>
+    <section class="signal scene" id="signal" aria-labelledby="signal-title">
+      <div class="section-label"><span>01 / THE SIGNAL</span><span>IT STARTS WITH A SPARK ↘</span></div>
+      <div class="signal-layout"><div class="signal-art" aria-hidden="true"><span class="art-cross">+</span><div class="signal-ring layer" data-speed="0.18"></div><div class="signal-ring ring-two layer" data-speed="-0.12"></div><span class="signal-star layer" data-speed="-0.23">✳</span><span class="art-label">CURIOSITY IS THE CATALYST.</span></div><div class="signal-copy"><h2 id="signal-title">The future<br>doesn't wait.<br><span>Neither do we.</span></h2><p>Tech Feast is a meeting point for curious minds. A place to question the familiar, connect unexpected ideas, and make something that didn't exist yesterday.</p><p class="small-statement">Less watching from the sidelines.<br>More “what if we tried this?”</p></div></div>
+    </section>
+    <section class="playground scene" id="playground" aria-labelledby="playground-title">
+      <div class="play-grid layer" data-speed="0.1" aria-hidden="true"></div>
+      <div class="section-label"><span>02 / THE PLAYGROUND</span><span>FOLLOW YOUR CURIOSITY ↘</span></div>
+      <div class="section-heading"><h2 id="playground-title">Different worlds.<br><em>Endless possibility.</em></h2><p>Pick a spark.<br>See where it takes you.</p></div>
+      <div class="cards">
+        <article class="world-card card-code layer" data-speed="0.055"><div class="card-top"><span>01 — BUILD</span><span aria-hidden="true">↗</span></div><div class="card-symbol code-symbol" aria-hidden="true">&lt;/&gt;</div><h3>Break the code.</h3><p>Turn a blank canvas into your next big idea. Experiment, iterate, and build beyond the obvious.</p><span class="card-tag">CODE × CREATIVE THINKING</span></article>
+        <article class="world-card card-design layer" data-speed="-0.065"><div class="card-top"><span>02 — IMAGINE</span><span aria-hidden="true">↗</span></div><div class="card-symbol design-symbol" aria-hidden="true">✳</div><h3>Remix reality.</h3><p>Where a little imagination meets a lot of possibility. Make the useful feel unexpected.</p><span class="card-tag">DESIGN × EXPERIMENTATION</span></article>
+        <article class="world-card card-connect layer" data-speed="0.075"><div class="card-top"><span>03 — CONNECT</span><span aria-hidden="true">↗</span></div><div class="card-symbol connect-symbol" aria-hidden="true">↗↙</div><h3>Find your people.</h3><p>Great things start with a conversation. Bring a different perspective. Leave with a new one.</p><span class="card-tag">COMMUNITY × COLLABORATION</span></article>
+      </div>
+    </section>
+    <section class="depth scene" id="depth" aria-labelledby="depth-title">
+      <div class="depth-rings" aria-hidden="true"><div class="depth-ring layer" data-speed="0.28"></div><div class="depth-ring layer" data-speed="0.14"></div><div class="depth-ring layer" data-speed="-0.09"></div></div>
+      <span class="eyebrow">03 / A SHIFT IN PERSPECTIVE</span><h2 id="depth-title" class="layer" data-speed="-0.1">A little curiosity.<br><em>A giant leap.</em></h2><p>Keep going. The best ideas are just beyond your comfort zone.</p><span class="depth-arrow" aria-hidden="true">↓</span>
+    </section>
+    <section class="future scene" id="future" aria-labelledby="future-title">
+      <canvas id="particles" aria-hidden="true"></canvas>
+      <div class="future-content"><span class="eyebrow">04 / YOUR NEXT CHAPTER</span><h2 id="future-title">MAKE<br><em>WHAT'S NEXT.</em></h2><p>The future is a work in progress.<br>Put your fingerprint on it.</p><button class="launch" id="launch">Make some waves <span aria-hidden="true">↗</span></button><p id="launch-status" class="launch-status" aria-live="polite">A small action. A new possibility.</p></div>
+      <span class="future-ghost layer" data-speed="0.12" aria-hidden="true">TF</span>
+    </section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">t<span>f</span></span> TECH FEAST</a><p>Made for curious minds.</p><a href="#home">Back to the surface ↑</a></footer>
+  <button class="motion-toggle" id="motion-toggle" aria-pressed="false" hidden><span aria-hidden="true">◉</span> <span id="motion-label">Motion on</span></button>
+  <noscript><p class="noscript">Explore every section below. Enable JavaScript for the interactive motion effects.</p></noscript>
+</body>
+</html>
